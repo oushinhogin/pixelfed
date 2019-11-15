@@ -11,6 +11,6 @@ composer \
     --profile \
     install
 
-php artisan migrate --no-interaction --no-ansi --force;
+# php artisan migrate --no-interaction --no-ansi --force;
 
 npm install;
