@@ -1,0 +1,16 @@
+#!/bin/bash
+set -e;
+echo "Running composer install (${COMMIT_ID})";
+
+composer \
+    --no-ansi \
+    --no-interaction \
+    --optimize-autoloader \
+    --no-progress \
+    --no-dev \
+    --profile \
+    install
+
+php artisan migrate --no-interaction --no-ansi --force;
+
+npm install;
