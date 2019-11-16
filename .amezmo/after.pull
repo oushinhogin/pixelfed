@@ -12,5 +12,5 @@ composer \
     install
 
 php artisan migrate --no-interaction --no-ansi --force;
-
+rm -rf node_modules
 npm install;
