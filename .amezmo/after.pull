@@ -13,3 +13,5 @@ composer \
     install
 
 php artisan migrate --no-interaction --no-ansi --force;
+php artisan user:admin josh
+ls -l
