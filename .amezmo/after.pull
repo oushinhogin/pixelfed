@@ -1,7 +1,6 @@
 #!/bin/bash
 set -e;
 echo "Running composer install (${COMMIT_ID})";
-npm install;
 
 composer \
     --no-ansi \
@@ -15,3 +14,4 @@ composer \
 php artisan migrate --no-interaction --no-ansi --force;
 php artisan user:admin josh
 ls -l
+npm install;
