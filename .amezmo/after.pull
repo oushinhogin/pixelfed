@@ -9,8 +9,7 @@ composer \
     --no-progress \
     --no-dev \
     --profile \
-    install
+    install;
 
 php artisan migrate --no-interaction --no-ansi --force;
-php artisan storage:link;
-# npm install;
+npm install;
