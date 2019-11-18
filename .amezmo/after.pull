@@ -12,6 +12,5 @@ composer \
     install
 
 php artisan migrate --no-interaction --no-ansi --force;
-php artisan storage:link
-ls -l
-npm install;
+php artisan storage:link;
+# npm install;
