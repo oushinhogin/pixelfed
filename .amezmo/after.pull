@@ -3,10 +3,6 @@
 set -e
 echo "Running composer install (${COMMIT_ID})"
 
-pwd
-ls -l storage
-ls -l ../..
-
 composer \
     --no-ansi \
     --no-interaction \
@@ -21,3 +17,8 @@ php artisan migrate --no-interaction --no-ansi --force
 php artisan storage:link
 
 npm install
+
+mkdir -p /webroot/storage
+cp -r -u storage/* /webroot/storage
+rm -rf storage
+ln -s /webroot/storage storage
