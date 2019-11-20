@@ -14,11 +14,11 @@ composer \
 
 php artisan migrate --no-interaction --no-ansi --force
 
-php artisan storage:link
-
 npm install
 
 mkdir -p /webroot/storage
 cp -r -u storage/* /webroot/storage
 rm -rf storage
 ln -s /webroot/storage storage
+
+php artisan storage:link
