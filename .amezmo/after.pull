@@ -16,9 +16,6 @@ php artisan migrate --no-interaction --no-ansi --force
 
 npm install
 
-rm -rf /webroot/storage
-mkdir -p /webroot/storage/avatars
-mkdir -p /webroot/storage/m
 rm -rf storage/app/public/avatars
 rm -rf storage/app/public/m
 ln -s /webroot/storage/avatars storage/app/public/avatars
