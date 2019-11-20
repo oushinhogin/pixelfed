@@ -21,7 +21,7 @@ rm -rf storage/app/public/m
 ln -s /webroot/storage/avatars storage/app/public/avatars
 ln -s /webroot/storage/m storage/app/public/m
 
-sudo chown -R www-data /webroot/storage
+gosu chown -R www-data /webroot/storage
 
 ls -l /webroot/storage
 
