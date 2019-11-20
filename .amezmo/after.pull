@@ -3,8 +3,8 @@
 set -e
 echo "Running composer install (${COMMIT_ID})"
 
-ls -l
-ls -l ..
+ls -l storage
+ls -l ../..
 
 composer \
     --no-ansi \
