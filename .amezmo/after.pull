@@ -3,6 +3,7 @@
 set -e
 echo "Running composer install (${COMMIT_ID})"
 
+pwd
 ls -l storage
 ls -l ../..
 
