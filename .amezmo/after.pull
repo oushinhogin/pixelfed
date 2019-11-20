@@ -13,4 +13,7 @@ composer \
 
 php artisan migrate --no-interaction --no-ansi --force;
 
+php artisan horizon:install
+php artisan horizon:assets
+
 npm install;
