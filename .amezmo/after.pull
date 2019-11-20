@@ -1,8 +1,10 @@
 #!/bin/bash
 
-
 set -e
 echo "Running composer install (${COMMIT_ID})"
+
+ls -l
+ls -l ..
 
 composer \
     --no-ansi \
@@ -15,7 +17,6 @@ composer \
 
 php artisan migrate --no-interaction --no-ansi --force
 
-php artisan horizon:install
-php artisan horizon:assets
+php artisan storage:link
 
 npm install
