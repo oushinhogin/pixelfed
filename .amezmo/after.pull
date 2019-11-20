@@ -1,6 +1,6 @@
 #!/bin/bash
-set -e;
-echo "Running composer install (${COMMIT_ID})";
+set -e
+echo "Running composer install (${COMMIT_ID})"
 
 composer \
     --no-ansi \
@@ -9,11 +9,11 @@ composer \
     --no-progress \
     --no-dev \
     --profile \
-    install;
+    install
 
-php artisan migrate --no-interaction --no-ansi --force;
+php artisan migrate --no-interaction --no-ansi --force
 
-php artisan horizon:install;
-php artisan horizon:assets;
+php artisan horizon:install
+php artisan horizon:assets
 
-npm install;
+npm install
