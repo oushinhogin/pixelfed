@@ -21,6 +21,8 @@ rm -rf storage/app/public/m
 ln -s /webroot/storage/avatars storage/app/public/avatars
 ln -s /webroot/storage/m storage/app/public/m
 
+chown -R www-data /webroot/storage
+
 ls -l /webroot/storage
 
 php artisan storage:link
