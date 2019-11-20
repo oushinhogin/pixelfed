@@ -11,9 +11,9 @@ composer \
     --profile \
     install;
 
-# php artisan migrate --no-interaction --no-ansi --force;
+php artisan migrate --no-interaction --no-ansi --force;
 
-#php artisan horizon:install;
-#php artisan horizon:assets;
+php artisan horizon:install;
+php artisan horizon:assets;
 
-#npm install;
+npm install;
