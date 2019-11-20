@@ -16,9 +16,9 @@ php artisan migrate --no-interaction --no-ansi --force
 
 npm install
 
-mkdir -p /webroot/storage
-cp -r -u storage/* /webroot/storage
-rm -rf storage
-ln -s /webroot/storage storage
+ln -s /webroot/storage public/storage
+
+ls public
 
 php artisan storage:link
+ls public
