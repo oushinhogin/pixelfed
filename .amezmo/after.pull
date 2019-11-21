@@ -17,11 +17,8 @@ php artisan migrate --no-interaction --no-ansi --force
 npm install
 
 # rm -rf /webroot/storage/*
-# cp -r storage/app/public/* /webroot/storage
+cp -r storage/app/public/* /webroot/storage
 
-find /webroot/storage -type d -exec chmod 0770 {} \;
-find /webroot/storage -type f -exec chmod 0660 {} \;
-su -c "chown -R www-data:deployer /webroot/storage"
 ln -s /webroot/storage public/storage
 
 # rm -rf storage/app/public/avatars
@@ -30,7 +27,7 @@ ln -s /webroot/storage public/storage
 # ln -s /webroot/storage/m storage/app/public/m
 
 # php artisan storage:link
-php artisan user:admin josh
+# php artisan user:admin josh
 php artisan config:cache
 php artisan route:cache
 
