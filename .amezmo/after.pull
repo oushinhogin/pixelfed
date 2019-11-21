@@ -16,8 +16,6 @@ php artisan migrate --no-interaction --no-ansi --force
 
 npm install
 
-chmod -R 0777 /webroot/storage/avatars
-
 ln -s /webroot/storage public/storage
 
 # php artisan storage:link
@@ -28,3 +26,4 @@ php artisan route:cache
 ls -l public
 ls -l /webroot
 ls -l /webroot/storage
+ls -l /webroot/storage/avatars
