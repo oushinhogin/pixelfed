@@ -19,6 +19,8 @@ npm install
 rm -rf storage/app/public
 ln -s /webroot/storage storage/app/public
 
+php artisan horizon:install
+php artisan horizon:assets
 php artisan storage:link
 php artisan config:cache
 php artisan route:cache
