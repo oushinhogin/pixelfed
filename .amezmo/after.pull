@@ -16,7 +16,7 @@ php artisan migrate --no-interaction --no-ansi --force
 
 npm install
 
-chmod -R 0777 /webroot/storage/*
+rm -rf /webroot/storage/*
 
 ln -s /webroot/storage public/storage
 
