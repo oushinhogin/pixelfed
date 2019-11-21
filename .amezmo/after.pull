@@ -19,8 +19,8 @@ npm install
 # rm -rf /webroot/storage/*
 # cp -r storage/app/public/* /webroot/storage
 
-find /weboot/storage -type d -exec chmod 0770 {} \;
-find /weboot/storage -type f -exec chmod 0660 {} \;
+find /webroot/storage -type d -exec chmod 0770 {} \;
+find /webroot/storage -type f -exec chmod 0660 {} \;
 su -c "chown -R www-data:deployer /webroot/storage"
 ln -s /webroot/storage public/storage
 
