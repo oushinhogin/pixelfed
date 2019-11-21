@@ -48,7 +48,7 @@ class UserAdmin extends Command
         $state = $user->is_admin ? 'Remove admin privileges from this user?' : 'Add admin privileges to this user?';
         $confirmed = $this->confirm($state);
         if(!$confirmed) {
-            /* exit; */
+            exit;
         }
 
         $user->is_admin = !$user->is_admin;
