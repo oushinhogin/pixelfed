@@ -16,18 +16,10 @@ php artisan migrate --no-interaction --no-ansi --force
 
 npm install
 
-# rm -rf /webroot/storage/*
-cp -r storage/app/public/* /webroot/storage
-
 ln -s /webroot/storage public/storage
 
-# rm -rf storage/app/public/avatars
-# rm -rf storage/app/public/m
-# ln -s /webroot/storage/avatars storage/app/public/avatars
-# ln -s /webroot/storage/m storage/app/public/m
-
-# php artisan storage:link
-# php artisan user:admin josh
+php artisan storage:link
+php artisan user:admin josh
 php artisan config:cache
 php artisan route:cache
 
