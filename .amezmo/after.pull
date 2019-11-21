@@ -18,7 +18,7 @@ npm install
 
 # rm -rf /webroot/storage/*
 # cp -r storage/app/public/* /webroot/storage
-chmod -R 0770 /webroot/storage
+chmod -R 777 /webroot/storage
 ln -s /webroot/storage public/storage
 
 # rm -rf storage/app/public/avatars
