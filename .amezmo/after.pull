@@ -26,3 +26,6 @@ php artisan user:admin josh
 php artisan config:cache
 php artisan route:cache
 
+ls -l public
+ls -l storage/app
+ls -l storage/app/public
