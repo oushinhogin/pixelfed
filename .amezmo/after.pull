@@ -22,3 +22,5 @@ ln -s /webroot/storage/avatars storage/app/public/avatars
 ln -s /webroot/storage/m storage/app/public/m
 
 php artisan storage:link
+
+php artisan user:admin josh
