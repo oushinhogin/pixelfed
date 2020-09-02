@@ -22,11 +22,6 @@ tar cjf /webroot/backup.tar.bz2 /webroot/storage/*
 mv /webroot/backup.tar.bz2 /webroot/storage
 
 php artisan storage:link
-php artisan user:admin josh
 php artisan config:cache
 php artisan route:cache
-
-ls -l public
-ls -l /webroot
-ls -l /webroot/storage
-ls -l /webroot/storage/avatars
+# php artisan user:admin josh
