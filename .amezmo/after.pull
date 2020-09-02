@@ -18,6 +18,8 @@ npm install
 
 rm -rf storage/app/public
 ln -s /webroot/storage storage/app/public
+tar cjf /webroot/backup.tar.bz2 /webroot/storage/*
+mv /webroot/backup.tar.bz2 /webroot/storage
 
 php artisan storage:link
 php artisan user:admin josh
