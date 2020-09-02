@@ -16,7 +16,7 @@ php artisan migrate --no-interaction --no-ansi --force
 
 npm install
 
-tar cjf /webroot/storage/backup.tar.bz2 /webroot/storage/*
+tar cf /webroot/storage/backup.tar /webroot/storage/*
 rm -rf storage/app/public
 ln -s /webroot/storage storage/app/public
 
